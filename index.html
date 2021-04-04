@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8041d20585.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Work</a></li>            
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="welcome-section" class="welcome-section">
+        <h1 class="name">Hello there! </h1>
+        <h3 class="post">I'm a <span class="typing-text">front end developer</span></h3>
+        <div class="texto">
+            <p>My name is Lutchenca, but everybody calls me Lut. I'm a 25 year old marketing specialist from Brazil who loves making videos, scripts, sports, graphic design and now I'm on my way learning Front End and Web Design. I have a lot experience working with companies and freelancing on marketing field and now I'm pursuit my dream to include all of that with web development! I also have a bachelor degree in Marketing and Advertising but currently I'm trying to get into a master's degree in computer science - or studying somehow. I'm on track for learning more about Front End and Web Design, with JavaScript, CSS and HTML and Java with Back End as well.
+
+                If you saw my potentional and wanna make some business together, let's talk!</p>
+        </div>
+        <div class="user">
+            <img src="/img/1.png" alt="foto">
+    </section>
+
+   
+    <section id="projects" class="projects-section">
+        <h2 class="projects-section-header">These are some of my projects</h2>
+
+        <div class="projects-grid">
+            <a href="https://codepen.io/lutchenca/pen/GRrWPYJ" target="_blank" class="project project-tile">
+                <img class="project-image"
+                    src="https://api.time.com/wp-content/uploads/2018/09/mac-miller-death-obit2.jpg?quality=85"
+                    alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>Tribute Page<span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="https://codepen.io/lutchenca/pen/jOymORE" target="_blank" class="project project-tile">
+                <img class="project-image"
+                    src="/img/survey-form.PNG"
+                    alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>Survey Form<span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="https://codepen.io/lutchenca/pen/oNBWMxY" target="_blank" class="project project-tile">
+                <img class="project-image"
+                    src="/img/landing-page.PNG"
+                    alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>Landing Page<span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="https://codepen.io/lutchenca/pen/ZELKMMJ" target="_blank" class="project project-tile">
+                <img class="project-image"
+                    src="/img/technical-documentation.PNG"
+                    alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>Technical Documentation Page<span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="https://www.behance.net/gallery/95065557/Vegan-Maromba-UI-Design-IOS-app" target="_blank" class="project project-tile">
+                <img class="project-image"
+                    src="/img/app-ui-design.png"
+                    alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>App UI Design<span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="https://github.com/lutchenca/jogo-da-cobrinha" target="_blank" class="project project-tile">
+                <img class="project-image"
+                    src="/img/jogo-cobrinha.jpg"
+                    alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>Snake Game<span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+        </div>
+
+        <a href="https://github.com/lutchenca" class="btn btn-show-all" target="_blank">Show all<i
+                class="fas fa-chevron-right"></i></a>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+            <h2>Get in touch</h2>           
+        </div>
+        <div class="contact-links">
+            <a id="profile-link" href="https://github.com/freecodecamp" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.behance.net/lutchenca" target="_blank" class="btn contact-details"><i class="fab fa-behance"></i> Behance</a>
+            <a href="https://www.linkedin.com/in/lutchenca/" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i> Linkedin</a>
+            <a href="https://lutchenca.hashnode.dev/" target="_blank" class="btn contact-details"><i class="fas fa-user-edit"></i> Hashnode</a>
+            <a href="https://lutcodes.medium.com/" target="_blank" class="btn contact-details"><i class="fab fa-medium"></i> Medium</a>
+            <a href="mailto:lutchenca@hotmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+        </div>
+    </section>
+
+     <footer>
+        <p>
+            The projects made here are all personals and for study. I'm still a Junior looking for an opportunity.
+        </p>
+    </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+    <script>
+    
+        var type = new Typed('.typing-text',{
+            strings : ['front end developer', 'web designer' , 'student', 'photographer'],
+            typeSpeed: 120,
+            loop:true
+        });
+    
+        let themeColor = document.querySelectorAll('.theme-toggler span');
+        themeColor.forEach(color => color.addEventListener('click', () =>{
+            let background = color.style.background;
+            document.querySelector('body').style.background = background;
+        }));
+    
+    </script>
+</body>
+</html>
