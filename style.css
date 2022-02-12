@@ -119,7 +119,6 @@ section {
   align-self: center;
 }
 
-
 .me {
   border-radius: 50%;
 }
@@ -172,13 +171,10 @@ section {
   color: #fdfcdc;
 }
 
-
 .contact-info {
   flex: 2 1;
   margin: 0 10px;
 }
-
-
 
 .contact h1 {
   font-size: 5em;
@@ -200,7 +196,6 @@ section {
 .btn {
   color: #00ffc3;
 }
-
 
 .footer {
   text-align: center;
